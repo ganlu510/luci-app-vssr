@@ -263,6 +263,10 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     max-height: 100%;
     width: auto;
 }
+.pure-imgw{
+    max-width: 100%;
+    height: auto;
+}
 .green {
     font-size: 1.25rem;
     color: #2dce89;
@@ -307,6 +311,9 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .p-in5{
     padding: 8px;
 }
+.flag-icon:before{
+    position: absolute;
+}
 
 .cbi-section-table-row {
     position: relative;
@@ -343,6 +350,10 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     outline: 0;
     text-decoration: none;
     box-shadow: none;
+}
+
+.cbi-section-table-row.fast .host_con{
+    color: #fff !important;
 }
 
 .host_con.fast {
@@ -394,6 +405,12 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .alias{
     margin-bottom:1px;
 }
+.incon{
+    cursor: pointer;
+}
+.incon .pure-imgw{
+    transition: all 0.2s;
+}
 .incon:nth-child(2) {
     position: absolute;
     left: 0;
@@ -437,7 +454,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .ssr-button {
     background: none;
     color: #525f7f;
-    padding: 0 0 0 6px;
+    padding: 0 0 0 0;
     height: auto;
     line-height: 1.5em;
 }
@@ -472,7 +489,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .host_con {
     position: absolute;
     left: 0;
-    width: 50px;
+    width: 70px;
     text-align: left;
     height: 22px;
     font-weight: bold;
@@ -518,12 +535,15 @@ footer.mobile-hide{
     float: left;
     margin-right: 1em;
 }
+.status-bar .inner .status-info{
+    font-weight: bold;
+}
 .status-bar .icon-con{
     height: 3em;
     text-align: right;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 2000px) {
     .pure-u-1-5 {
         width: 25%;
     }
